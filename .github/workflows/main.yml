@@ -65,7 +65,7 @@ jobs:
             for i in $(seq 1 36); do
               if RESP="$(curl -fsS --max-time 3 "http://127.0.0.1:${NEW_PORT}/health" || true)"; then
                 echo "Health response: ${RESP}"
-                  if echo "$RESP" | grep -qi 'ok'; then
+                  if echo "$RESP" | grep -qi 'healthy'; then
                     echo "New container is healthy (curl ok)."
                       break
                   fi
