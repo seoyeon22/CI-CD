@@ -14,5 +14,5 @@ jobs:
           username: ubuntu
           password: qwer1234
           port: 120
-          sript:
+          script:
             echo test > /tmp/test
