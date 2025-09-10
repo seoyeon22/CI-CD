@@ -14,6 +14,6 @@ public class TestController {
 
     @GetMapping("/health")
     public ResponseEntity health(){
-        return ResponseEntity.status(HttpStatus.OK).body("ok");
+        return ResponseEntity.ok("ok");
     }
 }
